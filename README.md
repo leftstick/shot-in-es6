@@ -1,4 +1,6 @@
 # shot-in-es6
+![][travis-url]
+
 A bunch of testcases here to demonstrate how cool es6 is.
 
 Because both [node](https://nodejs.org/en/) and browsers are not widely support all the features for es6, we choose [babel](http://babeljs.io/) as the `transpiler` to make all the features work.
@@ -27,3 +29,5 @@ gulp test
 ## LICENSE ##
 
 [MIT License](https://raw.githubusercontent.com/leftstick/shot-in-es6/master/LICENSE)
+
+[travis-url]:https://api.travis-ci.org/leftstick/shot-in-es6.svg?branch=master
