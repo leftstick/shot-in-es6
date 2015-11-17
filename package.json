@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/leftstick/shot-in-es6/issues"
   },
+  "engines": {
+    "node": ">= 0.12"
+  },
   "homepage": "https://github.com/leftstick/shot-in-es6#readme",
   "dependencies": {
     "babel-core": "^6.1.21",
