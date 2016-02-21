@@ -1,6 +1,6 @@
 'use strict';
 var path = require('path');
-var webpack = require('webpack');
+require('webpack');
 
 module.exports = {
     entry: {
@@ -15,7 +15,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel',
-                exclude: /(node_modules|bower_components)/,
+                exclude: /(node_modules)/,
                 query: {
                     presets: [
                         'es2015'

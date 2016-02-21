@@ -1,24 +1,36 @@
 'use strict';
 
+require('webpack');
+var webpackConfig = require('./webpack.config');
+
 module.exports = function(config) {
     config.set({
         autoWatch: false,
         basePath: __dirname,
         browsers: [
-            'Chrome'
+            'PhantomJS'
         ],
         files: [
-            'test/test.bundle.js'
+            './node_modules/phantomjs-polyfill/bind-polyfill.js',
+            'test/index.js'
         ],
+        preprocessors: {
+            './test/index.js': [
+                'webpack'
+            ]
+        },
+        webpack: webpackConfig,
+        webpackMiddleware: {
+            noInfo: true
+        },
         frameworks: [
-            'mocha',
-            'chai-sinon'
+            'mocha'
         ],
         logLevel: config.LOG_INFO,
         plugins: [
+            'karma-webpack',
             'karma-mocha',
-            'karma-chai-sinon',
-            'karma-chrome-launcher'
+            'karma-phantomjs-launcher'
         ],
         singleRun: true
     });

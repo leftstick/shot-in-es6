@@ -1,5 +1,5 @@
 'use strict';
 
 <% modules.forEach(function(mod){ %>
-import '<%= mod %>';
+require('<%= mod %>');
 <% }); %>

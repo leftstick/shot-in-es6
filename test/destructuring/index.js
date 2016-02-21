@@ -1,5 +1,7 @@
 'use strict';
 
+var expect = require('chai').expect;
+
 describe('Testing destructuring', function() {
 
     it('primitive assignment', function() {
@@ -18,7 +20,7 @@ describe('Testing destructuring', function() {
             return 'world';
         };
 
-        var [a, b, c] = [{name: 'howard'}, [1,3], func];
+        var [a, b, c] = [{name: 'howard'}, [1, 3], func];
 
         expect(a).to.deep.equal({name: 'howard'});
         expect(b).to.deep.equal([1, 3]);
