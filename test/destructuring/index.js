@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 
 describe('Destructuring', function() {
 
-    it('primitive assignment', function() {
+    it('array assignment', function() {
 
         var [a, b, c] = [1, 2, 3];
 
@@ -16,15 +16,13 @@ describe('Destructuring', function() {
 
     it('object assignment', function() {
 
-        var func = function() {
-            return 'world';
+        var {name: userName, gender: userGender} = {
+            name: 'nanfeng',
+            gender: 'male'
         };
 
-        var [a, b, c] = [{name: 'howard'}, [1, 3], func];
-
-        expect(a).to.deep.equal({name: 'howard'});
-        expect(b).to.deep.equal([1, 3]);
-        expect(c).to.equal(func);
+        expect(userName).to.equal('nanfeng');
+        expect(userGender).to.equal('male');
 
     });
 
