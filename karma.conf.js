@@ -26,10 +26,12 @@ module.exports = function(config) {
         frameworks: [
             'mocha'
         ],
+        reporters: ['mocha'],
         logLevel: config.LOG_INFO,
         plugins: [
             'karma-webpack',
             'karma-mocha',
+            'karma-mocha-reporter',
             'karma-phantomjs-launcher'
         ],
         singleRun: true

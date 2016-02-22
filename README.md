@@ -1,18 +1,13 @@
 # shot-in-es6
 ![][travis-url]
 
-A bunch of testcases here to demonstrate how cool es6 is.
+A bunch of test-cases here to demonstrate how cool ES2015 is.
 
-Because both [node](https://nodejs.org/en/) and browsers are not widely support all the features for es6, we choose [babel](http://babeljs.io/) as the `transpiler` to make all the features work.
+Because both [node](https://nodejs.org/en/) and browsers are not fully support all the features for ES2015, we choose [babel](http://babeljs.io/) as the `transpiler` to have all the ES2015 features work.
 
 ### Prerequisites ###
 
-- [es6-features](https://github.com/lukehoban/es6features)
-- [mocha](https://mochajs.org/)
-- [chai](http://chaijs.com/)
-- [gulp](https://github.com/gulpjs/gulp)
-
-> You may want to know more about `es6` and how i test them in this project
+- Have [node](http://nodejs.org/) installed
 
 ### Install dependencies ###
 
@@ -20,10 +15,10 @@ Because both [node](https://nodejs.org/en/) and browsers are not widely support 
 npm install
 ```
 
-### Execute testcases ###
+### Execute test-cases ###
 
 ```bash
-gulp test
+npm test
 ```
 
 ## LICENSE ##

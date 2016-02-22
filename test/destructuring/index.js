@@ -2,7 +2,7 @@
 
 var expect = require('chai').expect;
 
-describe('Testing destructuring', function() {
+describe('Destructuring', function() {
 
     it('primitive assignment', function() {
 
