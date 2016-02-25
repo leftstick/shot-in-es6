@@ -34,7 +34,7 @@ describe('Set', function() {
     it('clear', function() {
         var cities = new Set(['Shanghai', 'Beijing', 'Guangzhou']);
 
-        cities.clear('Beijing');
+        cities.clear();
 
         expect(cities.size).to.be.equal(0);
 
