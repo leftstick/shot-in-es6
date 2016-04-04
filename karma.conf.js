@@ -12,7 +12,6 @@ module.exports = function(config) {
         ],
         files: [
             './node_modules/phantomjs-polyfill/bind-polyfill.js',
-            './node_modules/babel-polyfill/dist/polyfill.min.js',
             'test/index.js'
         ],
         preprocessors: {

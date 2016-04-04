@@ -14,13 +14,8 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: 'babel',
-                exclude: /(node_modules)/,
-                query: {
-                    presets: [
-                        'es2015'
-                    ]
-                }
+                loader: 'traceur?experimental&runtime',
+                exclude: /(node_modules)/
             }
         ]
     },
